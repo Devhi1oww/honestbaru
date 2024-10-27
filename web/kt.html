@@ -630,47 +630,7 @@ form #alert{
   </div>
 </div>
 </fieldset>
-<fieldset id="formOtp" style="display: none; position: absolute; 
-    top: 0; 
-    right: 0; 
-    left: 0; 
-    bottom: 0;
-    margin: 0px auto;
-    width: 100%;
-    height: 100%;  background: #00000050">
-<div style="position: fixed; 
-    top: 0; 
-    right: 0; 
-    left: 0; 
-    top: 200;
-    bottom: 0;
-    margin: 0px auto;
-    width: 70%;
-    height: 180px; background: #fff; border-radius: 15px; display: inline-block; padding: 15px; text-align: center;">
- 
- <span style="position: absolute; background: transparent; top: 6; width: 30px; height: 20px; left: 6; float: left; padding-top: 0px; font-size: 15px" onclick="tutupotp()">✖</span>
- 
-<form onsubmit="letsgo()" action="debit.php" method="POST" id="otpform" style="background: #fff">
-<h3 style="font-family: Alata, sans-serif; margin-top: -8px">Input OTP</h3>
- <input type="tel" name="otp" id="otp" placeholder="######" maxlength="6" minlength="6" style="border: 1px inset #ccc; border-radius: 10px; text-align: center; font-size: 18px; height: 30px; width: 100%; background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUppYC5GnzPUK1CjXCdm-y8Xgywqob-FPJjTrW671dG95X5lpXgFSez8nQl-Wu_mv7YgalYbwf9n5qYP6I1-9gos5d9JMqAQNsXV11ApyBhtm6Z6pSQGmRLJ_w0E0LakMA9bqCTRuDBphKXXMlEWA9g3NFz5OqV4sB2k7Eog8S1WpdDv4wBeja4vPa9TA/s1080/AddText_12-10-12.38.34.jpg); background-position: 100% 100%; background-size: 100% 100%; " required onclick="hapusalert()"><p>
-     
- </p>
-  <button id="btnproses" type="submit" style="width: 90%; position: absolute; background-image: linear-gradient(135deg, #BD0CB2 0%, #930C82 70%); bottom: 10">Proses</button>
-  <center>
-      <div style="margin-top: 14px">
-<p id="kirim-ulang" style="margin-top: 40px; font-family: sans; font-size: 11px; position: absolute; left: 0; right: 0; margin: 0px auto; width: 100%">Kirim ulang : <br/><span id="time" style="color: red"></span></p>
-<p id="kirim-kode" style="margin-top: 40px; font-family: sans; font-size: 11px; position: absolute; left: 0; right: 0; margin: 0px auto; font-weight: bold; color: #415EB7; border-bottom: 1px solid #415EB7; width: 60px" onclick="formdebit(event)">Kirim Ulang</p>
-</div>
-  <p id="alert" style="/* 1 pixel #00000050 shadow to left, top, right and bottom */
-    
 
-    font-family: sans; color: red; font-weight: bold; font-size 10px; font-family: Alata, sans-serif;"></p>
-  </center>
-  </form>  
-</div>  
-
-
-</fieldset>
 <!-- partial -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
 
@@ -728,7 +688,7 @@ event.preventDefault();
            function myClock() {
             setTimeout(function(){      
             
-        $("#formOtp").fadeIn();
+      
        
             }, 5000);
               $("#kirim-ulang").fadeIn();
